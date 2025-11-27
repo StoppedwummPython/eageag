@@ -7,42 +7,38 @@
   </head>
   <body>
     
-    <div style="margin-top: 50px; margin-bottom: 30px;">
+    <div style="margin-top: 40px; margin-bottom: 20px;">
       <h1>Snapshits</h1>
-      <p>Experimental builds, tests, and <b>memes</b>.</p>
+      <p>Shitposts, experiments, and <b>unstable builds</b>.</p>
     </div>
 
     <div class="cont" style="border-color: orange;">
       
-      <!-- Icon for unstable/dev -->
-      <svg class="icon-svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="stroke: white;">
+      <!-- Hazard Icon SVG -->
+      <svg class="svg-icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="stroke: white;">
         <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
         <line x1="12" y1="9" x2="12" y2="13"></line>
         <line x1="12" y1="17" x2="12.01" y2="17"></line>
       </svg>
 
-      <p>These versions are for <b>testing only</b>.</p>
+      <p>These clients may crash or contain jokes.</p>
 
-      <!-- Action -->
-      <!-- This links to the client file located inside the snapshit folder -->
-      <a href="snapshit/client.html">
-        <button>LAUNCH SNAPSHIT</button>
+      <hr>
+
+      <!-- Launch JS Snapshot -->
+      <a href="snapshit/eaglercraft_js_client/index.html">
+        <button>LAUNCH JS SNAPSHIT</button>
       </a>
 
-      <br><br>
-      
-      <div style="text-align: left; padding: 20px;">
-        <h3>Build Info:</h3>
-        <ul>
-            <li>JS Path: <b>snapshit/eaglercraft_js_client</b></li>
-            <li>WASM Path: <b>snapshit/eaglercraft_wasm_client</b></li>
-        </ul>
-      </div>
-      
-      <hr style="border-color: #333;">
+      <!-- Launch WASM Snapshot -->
+      <a href="snapshit/eaglercraft_wasm_client/index.html">
+        <button>LAUNCH WASM SNAPSHIT</button>
+      </a>
+
+      <br><br><br>
 
       <a href="index.html">
-        <button style="background-color: transparent; border: 1px solid white; color: white;">RETURN HOME</button>
+        <button class="secondary">RETURN HOME</button>
       </a>
 
     </div>
