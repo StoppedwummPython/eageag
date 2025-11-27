@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>eageag | Custom Client</title>
+    <title>eageag | Client</title>
     <link rel="stylesheet" href="/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     
-    <!-- Hero Section -->
-    <div style="margin-top: 50px; margin-bottom: 30px;">
+    <div style="margin-top: 40px; margin-bottom: 20px;">
       <h1>eageag</h1>
       <p>The modified client with <b>better defaults</b>.</p>
     </div>
 
-    <!-- Main Container -->
     <div class="cont">
-      <h2>Features</h2>
       
-      <div class="feature-grid">
+      <!-- Feature Grid -->
+      <div class="features">
         
         <!-- Feature 1: Servers -->
-        <div class="feature-item">
-          <svg class="icon-svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <div class="feature-box">
+          <!-- Server Icon SVG -->
+          <svg class="svg-icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
             <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
             <line x1="6" y1="6" x2="6.01" y2="6"></line>
             <line x1="6" y1="18" x2="6.01" y2="18"></line>
           </svg>
-          <p>Pre-Added Servers<br>from <b>servers.eaglercraft.com</b></p>
+          <p>Pre-Added Servers<br><span style="font-size:0.8em; color:#888;">from servers.eaglercraft.com</span></p>
         </div>
 
         <!-- Feature 2: Voice Chat -->
-        <div class="feature-item">
-          <svg class="icon-svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <div class="feature-box">
+          <!-- Mic Icon SVG -->
+          <svg class="svg-icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
             <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
             <line x1="12" y1="19" x2="12" y2="23"></line>
             <line x1="8" y1="23" x2="16" y2="23"></line>
           </svg>
-          <p><b>Toggle</b> to Speak<br>(No more holding keys)</p>
+          <p><b>Toggle</b> to Speak<br><span style="font-size:0.8em; color:#888;">No holding required</span></p>
         </div>
 
         <!-- Feature 3: Support -->
-        <div class="feature-item">
-          <svg class="icon-svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <div class="feature-box">
+          <!-- Life Ring SVG -->
+          <svg class="svg-icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M4.93 4.93l4.24 4.24"></path>
+            <path d="M14.83 14.83l4.24 4.24"></path>
+            <path d="M14.83 9.17l4.24-4.24"></path>
+            <path d="M14.83 9.17l3.53-3.53"></path>
+            <path d="M4.93 19.07l4.24-4.24"></path>
           </svg>
-          <p>Active <b>Support</b><br>Community</p>
+          <p>Active <b>Support</b></p>
         </div>
 
       </div>
 
-      <hr style="border-color: #333; margin: 20px 0;">
+      <hr>
 
-      <!-- Actions -->
-      <a href="client.html">
-        <button>LAUNCH CLIENT</button>
+      <h3>Select Client Version</h3>
+      
+      <!-- Launch JS Client -->
+      <a href="eaglercraft_js_client/index.html">
+        <button>LAUNCH JS CLIENT</button>
+      </a>
+
+      <!-- Launch WASM Client -->
+      <a href="eaglercraft_wasm_client/index.html">
+        <button>LAUNCH WASM CLIENT</button>
       </a>
       
       <br><br>
       
-      <p>Looking for snapshots and shitposts?</p>
+      <p>Looking for testing builds?</p>
       <a href="snapshits.html">
-        <button style="background-color: #333; color: orange; border: 1px solid orange;">GO TO SNAPSHITS</button>
+        <button class="secondary">GO TO SNAPSHITS</button>
       </a>
 
-    </div>
-
-    <div class="footer">
-      <p>eageag client &copy; 2025</p>
     </div>
 
   </body>
